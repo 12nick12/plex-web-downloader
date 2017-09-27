@@ -11,6 +11,6 @@ block content
     each channel, i in channels
       li
         if(channel.type == 2)
-          a(href="/show_list/#{channel.id}")= channel.name
+          a(href="/pwd/show_list/#{channel.id}")= channel.name
         else
-          a(href="/channel/#{channel.id}")= channel.name
+          a(href="/pwd/channel/#{channel.id}")= channel.name

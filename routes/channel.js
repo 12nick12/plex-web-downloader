@@ -49,7 +49,7 @@ router.get('/:id', function(req, res, next) {
     },
     //aprés toute les opération de la base
     function() {
-        res.render('channel', { title: 'Liste des vidéos',videos: data, channel: channel_info });
+        res.render('channel', { title: 'List of videos',videos: data, channel: channel_info });
     });
 
   });

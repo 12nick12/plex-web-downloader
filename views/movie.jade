@@ -3,17 +3,17 @@ extends layout
 block content
   h1= movie.title
 
-  a(href="#",onclick="window.history.back();") Retour à la liste
+  a(href="#",onclick="window.history.back();") back to the list
   br
   br
 
   label Note
   p= movie.rating
 
-  label Télécharger
+  label Download
   br
   each file, i in movie.file
-    a(href="/file/#{file.id}/#{file.filename}") #{file.size} #{file.filename}
+    a(href="/pwd/file/#{file.id}/#{file.filename}") #{file.size} #{file.filename}
     br
   br
   label Résumé
