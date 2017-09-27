@@ -2,6 +2,8 @@
 Plex Web Downloader
 ===============
 
+The original translated into english and using pwd url base for nginx reverse proxy use
+
 This project allows you to create a list of your plex video files and to share them through a web interface.
 
 **************************************************************************************************************************************
