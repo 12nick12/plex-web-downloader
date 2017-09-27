@@ -23,7 +23,7 @@ router.get('/:id', function(req, res, next) {
     }
   }
 
-  //on fais toute les opération de base a la suite
+  //we do all the basic operations following
   db.serialize(function() {
 
     //db.run("CREATE TABLE if not exists user_info (info TEXT)");
@@ -47,7 +47,7 @@ router.get('/:id', function(req, res, next) {
 
         data.push(row);
     },
-    //aprés toute les opération de la base
+    //after all the operations of the database
     function() {
         res.render('channel', { title: 'List of videos',videos: data, channel: channel_info });
     });

@@ -21,7 +21,7 @@ router.get('/:id/:incoming_chan', function(req, res, next) {
   var db = config.init_db();
   var data = [];
 
-  //on fais toute les opération de base a la suite
+  //we do all the basic operations following
   db.serialize(function() {
 
     db.each("SELECT episode.id as id, episode.title as titre, episode.[index] as episode, episode.duration as second, season.[index] as saison, show.title as serie "+
@@ -51,7 +51,7 @@ router.get('/:id/:incoming_chan', function(req, res, next) {
     });
 
     db.close(function(){
-        //aprés toute les opération de la base
+        //after all the operations of the database
         var titre = "Série inexistante";
         if(data.length > 0){
           titre = 'Episode de '+data[0].serie;

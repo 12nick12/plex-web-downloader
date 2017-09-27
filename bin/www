@@ -1,5 +1,5 @@
 #!/usr/bin/env node
- //On commence par la mise en cluster
+ //One begins with the clustering
  var cluster = require('cluster');
 
  // Code to run if we're in the master process

@@ -42,7 +42,7 @@ router.get('/', function(req, res, next) {
   var db = config.init_db();
 
   /*var data = [];
-  //on fais toute les opération de base a la suite
+  //we do all the basic operations following
   db.serialize(function() {
 
     //db.run("CREATE TABLE if not exists user_info (info TEXT)");
