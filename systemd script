@@ -1,0 +1,15 @@
+# /etc/systemd/system/pwd.service
+# change user to someone whos not root
+
+[Unit]
+Description=pwd
+After=network-online.target
+
+[Service]
+User=root
+Type=simple
+ExecStart=/usr/bin/npm start /opt/plex-web-downloader/
+Restart=on-abort
+
+[Install]
+WantedBy=default.target
